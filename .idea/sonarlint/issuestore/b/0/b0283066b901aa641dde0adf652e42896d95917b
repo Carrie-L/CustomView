@@ -1,0 +1,9 @@
+
+_
+java:S2094"BRemove this empty class, write its code or make it an "interface".(Óµ¨œ8è–éáÑ1
+L
+java:S1197
+"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8ø´éáÑ1
+L	java:S106"+Replace this use of System.out by a logger.(íÄ®‰ûÿÿÿÿ8ş´éáÑ1
+F	java:S106"+Replace this use of System.out by a logger.(ŸÃ¸P8€µéáÑ1
+G	java:S106"+Replace this use of System.out by a logger.(ü£ä¨8€µéáÑ1

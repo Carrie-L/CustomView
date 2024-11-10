@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/btn_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/frame_view"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_path"
+                android:layout_width="@dimen/btn_main_width"
+                android:layout_height="@dimen/btn_main_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="@dimen/btn_margin_top"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="Path View"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_dash_board"
+                android:layout_width="@dimen/btn_main_width"
+                android:layout_height="@dimen/btn_main_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/btn_margin_top"
+                android:background="@color/light_green"
+                android:gravity="center"
+                android:text="Dash Board"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/tv_path"
+                app:layout_constraintTop_toBottomOf="@id/tv_path" />
+
+            <TextView
+                android:id="@+id/tv_pie"
+                android:layout_width="@dimen/btn_main_width"
+                android:layout_height="@dimen/btn_main_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/btn_margin_top"
+                android:background="@color/orange"
+                android:gravity="center"
+                android:text="Pie View"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/tv_path"
+                app:layout_constraintTop_toBottomOf="@id/tv_dash_board" />
+
+            <TextView
+                android:id="@+id/tv_scalable"
+                android:layout_width="@dimen/btn_main_width"
+                android:layout_height="@dimen/btn_main_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/btn_margin_top"
+                android:background="@color/purple"
+                android:gravity="center"
+                android:text="Scalable View"
+                android:textColor="@color/white"
+
+                app:layout_constraintStart_toStartOf="@id/tv_path"
+                app:layout_constraintTop_toBottomOf="@id/tv_pie" />
+
+            <TextView
+                android:id="@+id/tv_scroll_listview"
+                android:layout_width="@dimen/btn_main_width"
+                android:layout_height="@dimen/btn_main_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/btn_margin_top"
+                android:layout_marginBottom="16dp"
+                android:background="@color/brown"
+                android:gravity="center"
+                android:text="Scroll List View"
+
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/tv_path"
+                app:layout_constraintTop_toBottomOf="@id/tv_scalable" />
+
+            <TextView
+                android:id="@+id/tv_text_view"
+                android:layout_width="@dimen/btn_main_width"
+                android:layout_height="@dimen/btn_main_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/btn_margin_top"
+                android:layout_marginBottom="16dp"
+                android:background="@color/pink"
+                android:gravity="center"
+                android:text="Text View"
+
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/tv_path"
+                app:layout_constraintTop_toBottomOf="@id/tv_scroll_listview" />
+
+            <TextView
+                android:id="@+id/tv_scroll_view"
+                android:layout_width="@dimen/btn_main_width"
+                android:layout_height="@dimen/btn_main_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/btn_margin_top"
+                android:layout_marginBottom="16dp"
+                android:background="@color/red100"
+                android:gravity="center"
+                android:text="小球跟手滑动"
+
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/tv_path"
+                app:layout_constraintTop_toBottomOf="@id/tv_text_view" />
+
+            <TextView
+                android:id="@+id/tv_qq_step_view"
+                android:layout_width="@dimen/btn_main_width"
+                android:layout_height="@dimen/btn_main_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/btn_margin_top"
+                android:layout_marginBottom="16dp"
+                android:background="@color/indigo"
+                android:gravity="center"
+                android:text="仿步数动画"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/tv_path"
+                app:layout_constraintTop_toBottomOf="@id/tv_scroll_view" />
+
+            <TextView
+                android:id="@+id/tv_text_change"
+                android:layout_width="@dimen/btn_main_width"
+                android:layout_height="@dimen/btn_main_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/btn_margin_top"
+                android:layout_marginBottom="16dp"
+                android:background="@color/green"
+                android:gravity="center"
+                android:text="文字滑动变色"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_path"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_progress_circle_animate"
+                android:layout_width="@dimen/btn_main_width"
+                android:layout_height="@dimen/btn_main_height"
+                android:layout_marginTop="@dimen/btn_margin_top"
+                android:layout_marginBottom="16dp"
+                android:background="@color/yellow"
+                android:gravity="center"
+                android:text="圆形进度条动画"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/tv_text_change"
+                app:layout_constraintTop_toBottomOf="@id/tv_text_change" />
+
+            <TextView
+                android:id="@+id/tv_icon_change_animate"
+                android:layout_width="@dimen/btn_main_width"
+                android:layout_height="@dimen/btn_main_height"
+                android:layout_marginTop="@dimen/btn_margin_top"
+                android:layout_marginBottom="16dp"
+                android:background="@color/purple100"
+                android:gravity="center"
+                android:text="圆形进度条动画"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/tv_text_change"
+                app:layout_constraintTop_toBottomOf="@id/tv_progress_circle_animate" />
+
+            <TextView
+                android:id="@+id/tv_rating_bar"
+                android:layout_width="@dimen/btn_main_width"
+                android:layout_height="@dimen/btn_main_height"
+                android:layout_marginTop="@dimen/btn_margin_top"
+                android:layout_marginBottom="16dp"
+                android:background="@color/orange"
+                android:gravity="center"
+                android:text="5星评分"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/tv_text_change"
+                app:layout_constraintTop_toBottomOf="@id/tv_icon_change_animate" />
+
+            <TextView
+                android:id="@+id/tv_side_letter"
+                android:layout_width="@dimen/btn_main_width"
+                android:layout_height="@dimen/btn_main_height"
+                android:layout_marginTop="@dimen/btn_margin_top"
+                android:layout_marginBottom="16dp"
+                android:background="@color/teal"
+                android:gravity="center"
+                android:text="字母索引列表"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/tv_text_change"
+                app:layout_constraintTop_toBottomOf="@id/tv_rating_bar" />
+
+            <TextView
+                android:id="@+id/tv_letter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/frame_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_view">
+
+        <com.carrie.practicecustomview.view.LetterOverlayView
+            android:id="@+id/letterOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
